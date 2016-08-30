@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
             numbers.append(i)
         }
         
-        longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongGesture:")
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(SecondViewController.handleLongGesture(_:)))
         self.collectionView.addGestureRecognizer(longPressGesture)
     }
     

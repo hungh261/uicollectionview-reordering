@@ -23,7 +23,7 @@ class ThirdViewController: UIViewController {
             numbers.append(height)
         }
         
-        longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongGesture:")
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(ThirdViewController.handleLongGesture(_:)))
         self.collectionView.addGestureRecognizer(longPressGesture)
     }
     
